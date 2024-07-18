@@ -29,7 +29,14 @@ export const SectionWrapper = ({
           withOverlay && "bg-black bg-opacity-40",
         )}
       />
-      <div className="z-[1] flex w-full flex-col items-center">{children}</div>
+      <div
+        className={twMerge(
+          "z-[1] flex w-full flex-col items-center",
+          innerClassName,
+        )}
+      >
+        {children}
+      </div>
     </section>
   );
 };

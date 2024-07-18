@@ -2,31 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "cremiss";
-  src: url("./fonts/cremiss.otf");
-}
-
-@font-face {
-  font-family: "cremiss-sig";
-  src: url("./fonts/cremiss-sig.otf");
-}
-
-@font-face {
-  font-family: "roboto-bold";
-  src: url("./fonts/roboto-bold.ttf");
-}
-
-@font-face {
-  font-family: "roboto-light";
-  src: url("./fonts/roboto-light.ttf");
-}
-
-@font-face {
-  font-family: "roboto-regular";
-  src: url("./fonts/roboto-regular.ttf");
-}
-
 html {
   scroll-behavior: smooth;
   color: white;
@@ -34,7 +9,9 @@ html {
 p,
 span,
 div {
-  font-family: roboto;
+  font-family: lato;
+  letter-spacing: 2px;
+  font-weight: 500;
 }
 
 h1,
@@ -43,7 +20,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: cremiss;
-  letter-spacing: 4px;
-  font-weight: 600;
+  font-family: orbitron;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #9f00c5, #e6007e, #e6007e);
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari support */
+  color: transparent;
+}
+
+.bg-gradient {
+  background: linear-gradient(to right, #9f00c5, #e6007e, #e6007e);
 }
